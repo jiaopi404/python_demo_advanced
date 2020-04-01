@@ -6,7 +6,7 @@ def main():
     tcp_client_socket = socket(AF_INET, SOCK_STREAM)
 
     # 2. connect server
-    tcp_client_socket.connect(('192.168.0.115', 8080))
+    tcp_client_socket.connect(('0.0.0.0', 8098))
 
     # 3. do send and save
     send_data = input('data for sending: ')
